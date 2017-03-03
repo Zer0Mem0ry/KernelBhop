@@ -3,7 +3,7 @@ Cheat that uses a driver instead WinAPI for Reading / Writing memory.
 
 Unsigned Drivers can be loaded using https://github.com/hfiref0x/DSEFix
 
-This project uses a kernel mode driver in co-operation with a user mode program to establish a method of reading / writing virtual memory from a regular win32 program which uses a driver to execute the reading / writing of the memory itself. This means the user mode program does not have to open any handles to csgo or use ReadProcessMemory or WriteProcessMemory.
+This project uses a kernel mode driver in co-operation with a user mode program to establish a method of reading / writing virtual memory from a regular win32 program without having to use regular WinAPI Functions. This happens by using a driver to execute the reading / writing of the memory itself from a lower level. This means the user mode program does not have to open any handles to csgo or use ReadProcessMemory or WriteProcessMemory nor any functions that has to deal with process handles.
 
 VAC’s defence against external cheats is based on system handle scanning on user level. VAC scans handles in the system (ring3), when it finds a handle which for example points to cs:go, the process that holds that handle will be analysed.
 
