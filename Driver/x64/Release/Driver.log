@@ -1,0 +1,102 @@
+﻿  Building 'Driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Driver.c
+d:\projects\kernelbhop\driver\ntos.h(1012): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1013): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1014): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1015): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1016): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1017): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1018): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1019): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1020): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1021): warning C4214: nonstandard extension used: bit field types other than int
+d:\projects\kernelbhop\driver\ntos.h(1147): warning C4273: 'ZwAllocateVirtualMemory': inconsistent dll linkage
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\km\ntifs.h(25143): note: see previous definition of 'ZwAllocateVirtualMemory'
+d:\projects\kernelbhop\driver\ntos.h(1153): warning C4273: 'ZwFreeVirtualMemory': inconsistent dll linkage
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\km\ntifs.h(25159): note: see previous definition of 'ZwFreeVirtualMemory'
+Driver.c(49): warning C4047: 'function': 'PSIZE_T' differs in levels of indirection from 'PSIZE_T *'
+Driver.c(49): warning C4024: 'MmCopyVirtualMemory': different types for formal and actual parameter 7
+Driver.c(59): warning C4047: 'function': 'PSIZE_T' differs in levels of indirection from 'PSIZE_T *'
+Driver.c(59): warning C4024: 'MmCopyVirtualMemory': different types for formal and actual parameter 7
+Driver.c(76): warning C4047: '=': 'ULONG' differs in levels of indirection from 'PVOID'
+Driver.c(77): warning C4047: '=': 'ULONG' differs in levels of indirection from 'HANDLE'
+Driver.c(100): warning C4022: 'PsLookupProcessByProcessId': pointer mismatch for actual parameter 1
+Driver.c(101): warning C4022: 'KeReadVirtualMemory': pointer mismatch for actual parameter 2
+Driver.c(117): warning C4022: 'PsLookupProcessByProcessId': pointer mismatch for actual parameter 1
+Driver.c(119): warning C4022: 'KeWriteVirtualMemory': pointer mismatch for actual parameter 3
+Driver.c(82): warning C4100: 'DeviceObject': unreferenced formal parameter
+Driver.c(165): warning C4047: 'function': 'PLOAD_IMAGE_NOTIFY_ROUTINE' differs in levels of indirection from 'PLOAD_IMAGE_NOTIFY_ROUTINE (__cdecl *)(PUNICODE_STRING,HANDLE,PIMAGE_INFO)'
+Driver.c(165): warning C4024: 'PsSetLoadImageNotifyRoutine': different types for formal and actual parameter 1
+Driver.c(161): warning C4100: 'pRegistryPath': unreferenced formal parameter
+Driver.c(190): warning C4047: 'function': 'PLOAD_IMAGE_NOTIFY_ROUTINE' differs in levels of indirection from 'PLOAD_IMAGE_NOTIFY_ROUTINE (__cdecl *)(PUNICODE_STRING,HANDLE,PIMAGE_INFO)'
+Driver.c(190): warning C4024: 'PsRemoveLoadImageNotifyRoutine': different types for formal and actual parameter 1
+Driver.c(195): warning C4100: 'DeviceObject': unreferenced formal parameter
+Driver.c(204): warning C4100: 'DeviceObject': unreferenced formal parameter
+d:\projects\kernelbhop\driver\driver.c(79): warning C4716: 'ImageLoadCallback': must return a value
+d:\projects\kernelbhop\driver\driver.c(193): warning C4716: 'UnloadDriver': must return a value
+  Driver.vcxproj -> D:\Projects\KernelBhop\Driver\..\Release\Driver.sys
+  Driver.vcxproj -> ..\Release\Driver.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: D:\Projects\KernelBhop\Driver\..\Release\Driver.sys
+  
+ApiValidation : warning : API CloseServiceHandle in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API ControlService in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API CreateServiceW in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API DeleteService in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API OpenSCManagerW in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API OpenServiceW in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API StartServiceW in advapi32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API CloseHandle in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API CreateFileW in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API DeleteFileW in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API DeviceIoControl in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API EnterCriticalSection in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API ExitProcess in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API FreeLibrary in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetCommandLineW in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetCurrentProcess in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetCurrentProcessId in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetCurrentThreadId in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetLastError in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetProcAddress in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetProcessHeap in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetSystemDirectoryA in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetSystemDirectoryW in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API GetSystemTimeAsFileTime in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API HeapAlloc in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API HeapFree in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API IsDebuggerPresent in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API IsProcessorFeaturePresent in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API LeaveCriticalSection in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API LoadLibraryExA in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API MoveFileExW in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API OutputDebugStringA in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API QueryPerformanceCounter in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API RtlCaptureContext in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API RtlLookupFunctionEntry in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API RtlVirtualUnwind in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API SetUnhandledExceptionFilter in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API TerminateProcess in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API UnhandledExceptionFilter in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API VirtualAlloc in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API VirtualFree in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API WriteFile in kernel32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API wsprintfW in user32.dll is not a supported universal API. dsefix.exe calls this API.
+ApiValidation : warning : API CreateFileA in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API DeviceIoControl in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API GetCurrentProcess in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API GetCurrentProcessId in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API GetCurrentThreadId in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API GetModuleHandleW in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API GetSystemTimeAsFileTime in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API InitializeSListHead in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API IsDebuggerPresent in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API IsProcessorFeaturePresent in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API QueryPerformanceCounter in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API SetUnhandledExceptionFilter in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API Sleep in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API TerminateProcess in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API UnhandledExceptionFilter in kernel32.dll is not a supported universal API. KernelBhop.exe calls this API.
+ApiValidation : warning : API GetAsyncKeyState in user32.dll is not a supported universal API. KernelBhop.exe calls this API.
+C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets(1763,5): error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\bin\x64\ApiValidator.exe" -DriverPackagePath:D:\Projects\KernelBhop\Release\ -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml" -ModuleWhiteListXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\ModuleWhiteList.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\x64"" exited with code -1.

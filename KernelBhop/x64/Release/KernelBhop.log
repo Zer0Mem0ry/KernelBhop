@@ -1,0 +1,15 @@
+﻿  KernelBhop.cpp
+d:\projects\kernelbhop\kernelbhop\KeInterface.h(93): warning C4244: '=': conversion from 'SIZE_T' to 'ULONG', possible loss of data
+d:\projects\kernelbhop\kernelbhop\KeInterface.h(72): warning C4244: '=': conversion from 'SIZE_T' to 'ULONG', possible loss of data
+  KernelBhop.cpp(17): note: see reference to function template instantiation 'type KeInterface::ReadVirtualMemory<DWORD>(ULONG,ULONG,SIZE_T)' being compiled
+          with
+          [
+              type=DWORD
+          ]
+d:\projects\kernelbhop\kernelbhop\KeInterface.h(67): warning C4101: 'Return': unreferenced local variable
+d:\projects\kernelbhop\kernelbhop\KeInterface.h(67): warning C4101: 'Bytes': unreferenced local variable
+  Generating code
+  All 19 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  KernelBhop.vcxproj -> D:\Projects\KernelBhop\x64\Release\KernelBhop.exe
+  KernelBhop.vcxproj -> D:\Projects\KernelBhop\x64\Release\KernelBhop.pdb (Full PDB)
