@@ -126,7 +126,7 @@ NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)
 		DbgPrintEx(0, 0, "Write Params:  %lu, %#010x \n", WriteInput->Value, WriteInput->Address);
 
 		Status = STATUS_SUCCESS;
-		BytesIO = sizeof(PKERNEL_WRITE_REQUEST);
+		BytesIO = sizeof(KERNEL_WRITE_REQUEST);
 	}
 	else if (ControlCode == IO_GET_ID_REQUEST)
 	{
@@ -135,7 +135,7 @@ NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)
 
 		DbgPrintEx(0, 0, "id get %#010x", csgoId);
 		Status = STATUS_SUCCESS;
-		BytesIO = sizeof(OutPut);
+		BytesIO = sizeof(*OutPut);
 	}
 	else if (ControlCode == IO_GET_MODULE_REQUEST)
 	{
@@ -144,7 +144,7 @@ NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)
 
 		DbgPrintEx(0, 0, "Module get %#010x", ClientAddress);
 		Status = STATUS_SUCCESS;
-		BytesIO = sizeof(OutPut);
+		BytesIO = sizeof(*OutPut);
 	}
 	else
 	{
