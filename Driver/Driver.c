@@ -73,7 +73,7 @@ PLOAD_IMAGE_NOTIFY_ROUTINE ImageLoadCallback(PUNICODE_STRING FullImageName,
 	HANDLE ProcessId, PIMAGE_INFO ImageInfo)
 {
 	// Compare our string to input
-	if (wcsstr(FullImageName->Buffer, L"\\csgo\\bin\\client.dll")) {
+	if (wcsstr(FullImageName->Buffer, L"\\csgo\\bin\\client_panorama.dll")) {
 		// if it matches
 		DbgPrintEx(0, 0, "Loaded Name: %ls \n", FullImageName->Buffer);
 		DbgPrintEx(0, 0, "Loaded To Process: %d \n", ProcessId);

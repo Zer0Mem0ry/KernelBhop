@@ -19,11 +19,11 @@ https://www.youtube.com/watch?v=sJdBtPosWQs */
 #define IO_GET_MODULE_REQUEST CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0704 /* Our Custom Code */, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
 
 // Offset to force jump action
-#define FORCE_JUMP 0x04F5FD5C
+#define FORCE_JUMP		0x05170DB0
 // offset to local player
-#define LOCAL_PLAYER 0x00AA66D4
+#define LOCAL_PLAYER		0x00CBD6B4
 
-#define FFLAGS 0x00000100
+#define FFLAGS			0x00000104
 
 
 typedef struct _KERNEL_READ_REQUEST
