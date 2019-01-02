@@ -21,9 +21,9 @@ https://www.youtube.com/watch?v=sJdBtPosWQs */
 // Offset to force jump action
 #define FORCE_JUMP		0x05170DB0
 // offset to local player
-#define LOCAL_PLAYER	0x00CBD6B4
+#define LOCAL_PLAYER		0x00CBD6B4
 
-#define FFLAGS			0x00000100
+#define FFLAGS			0x00000104
 
 
 typedef struct _KERNEL_READ_REQUEST
